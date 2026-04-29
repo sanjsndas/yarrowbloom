@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>About | YarrowBloom Sanctuary – Our Story & Soul</title>
+  <meta name="description" content="Learn about YarrowBloom Sanctuary: a haven of cream & blue gardening, founded on regenerative wisdom, community, and over 78,000 words of botanical love.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: #1e3b4f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --cream-light: #fffdf7;
+      --blue-deep: #1e4a6b;
+      --blue-soft: #3b82b6;
+      --blue-pale: #cbdde6;
+      --accent-sage: #8ba888;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 2px solid #d9e2e8;
+      padding: 1.2rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      color: var(--blue-deep);
+      font-family: 'Trebuchet MS', 'Georgia', serif;
+    }
+    .logo span {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--blue-deep);
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--blue-soft);
+      color: var(--blue-soft);
+    }
+
+    .hero-about {
+      background: linear-gradient(135deg, #eaf5f0, #fff4e4);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--blue-pale);
+    }
+    .hero-about h2 {
+      font-size: 2.6rem;
+      color: var(--blue-deep);
+      max-width: 800px;
+      margin: 0 auto 0.8rem;
+    }
+    .hero-about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #2c5a6e;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .about-story {
+      background: white;
+      border-radius: 2rem;
+      padding: 2.2rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede5;
+    }
+
+    .story-title {
+      font-size: 2rem;
+      border-left: 6px solid var(--blue-soft);
+      padding-left: 1rem;
+      margin-bottom: 1.8rem;
+      color: var(--blue-deep);
+    }
+
+    .quote-block {
+      background: var(--cream);
+      padding: 1.8rem;
+      border-radius: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 4px solid var(--blue-soft);
+      color: #1e4a6b;
+    }
+
+    .mission-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+    .mission-card {
+      flex: 1;
+      min-width: 220px;
+      background: var(--cream-light);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      border: 1px solid #e2ddd2;
+    }
+    .mission-card h4 {
+      font-size: 1.6rem;
+      color: var(--blue-soft);
+      margin-bottom: 0.8rem;
+    }
+    .mission-card p {
+      font-size: 0.95rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .team-member {
+      background: #ffffffea;
+      border-radius: 1.8rem;
+      padding: 1.2rem;
+      text-align: center;
+      transition: 0.2s;
+    }
+    .team-member img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #d4e0e6;
+      margin-bottom: 0.8rem;
+      border: 3px solid var(--blue-pale);
+    }
+    .team-member h4 {
+      color: var(--blue-deep);
+      margin-top: 0.5rem;
+    }
+
+    .stats-banner {
+      background: linear-gradient(120deg, #dee9ef, #f6f1e2);
+      border-radius: 2rem;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .stat {
+      flex: 1;
+    }
+    .stat-number {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: var(--blue-deep);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      background: #1e3b4f;
+      color: #fef2df;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+    }
+    .footer-contact {
+      background: rgba(255,249,225,0.1);
+      padding: 0.8rem 1.8rem;
+      border-radius: 3rem;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+    .copyright {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-top: 1px solid #3e6c85;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 780px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .hero-about h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <h1>🌿 YarrowBloom Sanctuary</h1>
+        <span>where gardens whisper & blue skies linger</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+    <div class="hero-about">
+      <h2>🌱 Rooted in sanctuary, growing with purpose</h2>
+      <p>Step into our story — where cream-hued blossoms meet indigo horizons, and every garden bed holds a legacy of care.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="about-story">
+      <div class="story-title">🍃 The genesis of YarrowBloom Sanctuary</div>
+      <p>Founded in 2015 by master horticulturist Elara Moss and a collective of regenerative gardeners, YarrowBloom Sanctuary emerged from a simple belief: gardens heal both land and soul. What began as a neglected 2-acre plot in Harmony Valley, Vermont, has blossomed into an internationally recognized haven for cream & blue aesthetics, ecological design, and over 78,000 original words of timeless gardening wisdom. Our name honors <em>Achillea millefolium</em> (yarrow) — a plant of ancient resilience — and the enduring bloom of possibility. The cream symbolizes rich compost, moon-kissed petals, and the warmth of handmade soil; blue captures flowing water, clear skies, and the deep calm only a garden at dusk can provide. Today, we nurture more than 500 heirloom varieties, host regenerative workshops, and welcome thousands of digital visitors seeking honest, poetic horticulture.</p>
+      
+      <div class="quote-block">
+        “We didn’t just want to grow plants — we wanted to grow a philosophy. A sanctuary where every seed embodies hope, every blue delphinium is a brushstroke against anxiety, and every creamy rose whispers patience.” — Elara Moss, Founding Steward
+      </div>
+
+      <p>Over the past decade, YarrowBloom Sanctuary has evolved into a living library: from our no-dig market gardens to the medicinal spiral overflowing with chamomile and borage. Our digital home extends this legacy, offering free, ad-free, deeply researched content. Each article, guide, and plant profile reflects hands-on trials, climate adaptation, and an unwavering commitment to accessible gardening. We’ve collaborated with permaculture institutes, soil scientists, and botanists to craft a compendium that is both encyclopedic and lyrical. Whether you nurture a windowsill or a farmstead, you belong to our cream & blue circle.</p>
+
+      <div class="stats-banner">
+        <div class="stat"><div class="stat-number">78,000+</div><div class="stat-label">words of unique wisdom</div></div>
+        <div class="stat"><div class="stat-number">520+</div><div class="stat-label">heirloom & native cultivars</div></div>
+        <div class="stat"><div class="stat-number">12</div><div class="stat-label">acres of sanctuary gardens</div></div>
+        <div class="stat"><div class="stat-number">25k+</div><div class="stat-label">community members</div></div>
+      </div>
+
+      <div class="story-title">🌸 Our core pillars: cream & blue ethos</div>
+      <div class="mission-grid">
+        <div class="mission-card"><h4>🧑‍🌾 Regenerative Stewardship</h4><p>Soil-first practices: no-till, composting, biochar, water conservation. We model climate-resilient gardens that give back to Earth.</p></div>
+        <div class="mission-card"><h4>📚 Radical Knowledge Sharing</h4><p>Every guide, from grafting to pollinator corridors, is free and ever-expanding. Gardening as a common good.</p></div>
+        <div class="mission-card"><h4>🎨 Cream & Blue Aesthetic</h4><p>Design that heals — moon gardens, blue meditation nooks, sensory textures. Beauty is not superficial; it’s nourishment.</p></div>
+        <div class="mission-card"><h4>🤝 Accessible Sanctuary</h4><p>Adaptive tools, community plots, seed libraries. Gardening belongs to elders, children, and everyone in between.</p></div>
+      </div>
+
+      <div class="story-title">🌿 The sanctuary grounds & living collection</div>
+      <p>Our physical sanctuary in Harmony Valley spans twelve acres of meadows, woodlands, and cultivated beds. Highlights include the <strong>Crescent Moon Garden</strong> (cream floribunda roses, white peonies, and night-scented jasmine), the <strong>Indigo Labyrinth</strong> (a winding path of blue salvias, ceanothus, and Tibetan blue poppies), and the <strong>Permaculture Food Forest</strong> (layered with nut trees, berry thickets, and medicinal understory). We host weekly volunteer days, seasonal plant sales, and the renowned “Blue & Cream Symposium” each July. Our seed bank safeguards rare cultivars like ‘Grandmother’s Blue’ morning glory and ‘Cream of Saskatchewan’ watermelon — preserving botanical heritage for future generations. Visitors often share that the sanctuary feels like stepping into a living poem; the air carries scents of lavender, mint, and damp earth, while bees hum in perpetual gratitude.</p>
+
+      <div class="story-title">👩‍🌾 Meet the guardians</div>
+      <div class="team-grid">
+        <div class="team-member"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elara Moss"><h4>Elara Moss</h4><p>Founder & Head Curator, plant breeder, soil ecologist. Elara has 20+ years of experience in organic horticulture and conservation.</p></div>
+        <div class="team-member"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Samuel Greer"><h4>Samuel Greer</h4><p>Director of Regenerative Design, permaculture specialist. Samuel leads our water harvesting and food forest initiatives.</p></div>
+        <div class="team-member"><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Lei Chen"><h4>Lei Chen</h4><p>Community Outreach & Seed Library Steward. Lei connects schools and neighborhood gardens to the sanctuary’s mission.</p></div>
+        <div class="team-member"><img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Mateo Flores"><h4>Mateo Flores</h4><p>Herbal Apothecary & Education Coordinator. Mateo teaches wildcrafting, tincture-making, and kitchen medicine.</p></div>
+      </div>
+
+      <div class="story-title">📖 The digital library: beyond 78,000 words</div>
+      <p>Since our website’s inception, we’ve prioritized depth above clickbait. Every article emerges from decades of hands-on observation. Our content database includes a 520-cultivar encyclopedia, 40+ DIY garden projects (from cold frames to natural dyes), monthly lunar planting calendars, and advanced propagation tutorials. All content is rigorously checked by our horticultural advisory board and updated with new climate-adaptive insights. We are proud to be a non-commercial sanctuary — no pop-ups, no paid subscriptions. Just the timeless, calming voice of a garden mentor. Our readers include nursery owners, urban balcony growers, and permaculture students from six continents. And we continue to expand: next year, we will launch an audio almanac and interactive phenology tracker.</p>
+
+      <div class="quote-block">
+        “YarrowBloom Sanctuary feels like the wise grandmother of gardening websites — generous, unhurried, and deeply rooted in truth. The cream & blue palette is a visual hug, but the real treasure is the encyclopedic knowledge given freely.” — <strong>Gardening Journal review, 2024</strong>
+      </div>
+
+      <div class="story-title">🌎 Our commitment to Earth & community</div>
+      <p>Beyond our fencerows, YarrowBloom Sanctuary advocates for municipal pollinator corridors, school garden grants, and food justice. We’ve helped launch 50+ community gardens across North America, donating over 10,000 seed packets annually. Our “Sanctuary Sprouts” program brings nature-based education to under-resourced schools, teaching kids to propagate native plants and understand soil microbiology. We also work with veteran therapy gardens, offering horticultural rehabilitation. The cream & blue philosophy extends to inclusion, trauma-informed design, and climate resilience. We believe a garden is a revolutionary act of hope — and we invite you to join us, whether by planting a single pot of blue lobelia or transforming a suburban lawn into a food forest.</p>
+
+      <div class="story-title">📞 Visit or connect</div>
+      <p>Our sanctuary gates are open for self-guided tours every Friday through Sunday, 10 AM to 5 PM (seasonal hours). We offer workshops on seed saving, no-dig gardening, and crafting herbal salves. You’ll find our farmstand overflowing with organic seedlings, dried herbs, and jars of blueberry-lavender jam. Can’t make it to Vermont? Our digital doors are always open — sign up for our free newsletter (no spam, just seasonal musings and free planting guides). And if you’re a fellow garden writer or educator, reach out for collaboration; we believe in cross-pollination of ideas. All are welcome beneath our cream & blue sky.</p>
+      
+      <div style="background: #f1f0ea; border-radius: 1.5rem; padding: 1.5rem; margin-top: 2rem;">
+        <h4 style="color: var(--blue-deep); margin-bottom: 0.5rem;">🌼 Sanctuary oath</h4>
+        <p style="font-style: normal;">“We vow to nurture land without exploit, to share knowledge without gatekeeping, and to welcome all who seek solace in soil. Every seed is a prayer, every blossom a promise.” — <em>The YarrowBloom Creed</em></p>
+      </div>
+
+      <hr style="margin: 2rem 0;">
+      <p><strong>YarrowBloom Sanctuary</strong> is a registered 501(c)(3) nonprofit. Donations support our seed library, educational outreach, and land restoration projects. We are grateful for every hand that tends the earth and every person who believes in gardening as a healing art. Thank you for being part of this living sanctuary.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <p>📍 <strong>YarrowBloom Sanctuary</strong> — 1423 Garden Lane, Harmony Valley, VT 05001</p>
+        <p>📞 <strong>Sanctuary Phone:</strong> +1 (802) 555-7420  |  Mon–Sat 9am–6pm EST</p>
+        <p>🌿 <strong>Email:</strong> hello@yarrowbloomsanctuary.org</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 YarrowBloom Sanctuary — Cultivating cream & blue dreams. All rights reserved. Rooted in nature, rising with hope.</p>
+        <p>Photography & content inspired by regenerative gardening. Visit us for workshops & plant shares.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

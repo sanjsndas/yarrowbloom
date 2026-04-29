@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Terms of Service | YarrowBloom Sanctuary – Garden Ethos & Use</title>
+  <meta name="description" content="Terms of Service for YarrowBloom Sanctuary: community guidelines, intellectual property, ecological ethics, and our covenant of care for all who visit our digital and physical gardens.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: #1e3b4f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --cream-light: #fffdf7;
+      --blue-deep: #1e4a6b;
+      --blue-soft: #3b82b6;
+      --blue-pale: #cbdde6;
+      --accent-sage: #8ba888;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 2px solid #d9e2e8;
+      padding: 1.2rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      color: var(--blue-deep);
+      font-family: 'Trebuchet MS', 'Georgia', serif;
+    }
+    .logo span {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--blue-deep);
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--blue-soft);
+      color: var(--blue-soft);
+    }
+
+    .hero-terms {
+      background: linear-gradient(135deg, #eaf5f0, #fff4e4);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--blue-pale);
+    }
+    .hero-terms h2 {
+      font-size: 2.6rem;
+      color: var(--blue-deep);
+      max-width: 800px;
+      margin: 0 auto 0.8rem;
+    }
+    .hero-terms p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #2c5a6e;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .terms-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2.2rem 2.5rem;
+      margin: 1.8rem 0;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede5;
+    }
+
+    .terms-section {
+      margin-bottom: 2.5rem;
+    }
+    .terms-section h3 {
+      font-size: 1.8rem;
+      color: var(--blue-deep);
+      border-left: 5px solid var(--blue-soft);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+    .terms-section h4 {
+      font-size: 1.3rem;
+      color: var(--blue-soft);
+      margin: 1.2rem 0 0.6rem 0;
+    }
+    .terms-section p, .terms-section li {
+      color: #1e3b4f;
+      margin-bottom: 0.8rem;
+    }
+    .terms-section ul, .terms-section ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .highlight-box {
+      background: var(--cream);
+      padding: 1.4rem 1.8rem;
+      border-radius: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--accent-sage);
+      font-style: normal;
+    }
+    .oath-quote {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--blue-deep);
+      background: #f8f6ef;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #d9e2e8, transparent);
+    }
+
+    footer {
+      background: #1e3b4f;
+      color: #fef2df;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+    }
+    .footer-contact {
+      background: rgba(255,249,225,0.1);
+      padding: 0.8rem 1.8rem;
+      border-radius: 3rem;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+    .copyright {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-top: 1px solid #3e6c85;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 780px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .hero-terms h2 {
+        font-size: 2rem;
+      }
+      .terms-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <h1>🌿 YarrowBloom Sanctuary</h1>
+        <span>where gardens whisper & blue skies linger</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+    <div class="hero-terms">
+      <h2>📜 Terms of Service — Our Covenant of Care</h2>
+      <p>Gentle guidelines for tending this digital sanctuary and physical grounds. Rooted in mutual respect, ecological integrity, and the cream & blue spirit.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="terms-card">
+      <p><strong>Last updated:</strong> April 24, 2026 &nbsp;|&nbsp; <strong>Version:</strong> 2.2 (Sanctuary Ethos)</p>
+      <p style="margin-top: 0.5rem;">Welcome to YarrowBloom Sanctuary (“we”, “us”, “our”, “the Sanctuary”). By accessing our website (yarrowbloomsanctuary.org) or visiting our physical grounds in Harmony Valley, Vermont, you agree to be bound by these Terms of Service (“Terms”). Our mission is rooted in generosity, ecological mindfulness, and community care; these Terms exist to protect both the sanctuary’s living spirit and every soul who walks our garden paths—digital or soil-based.</p>
+      
+      <div class="highlight-box">
+        🌼 <strong>Sanctuary promise:</strong> We will always strive to keep our content free, ad-free, and rooted in truth. These Terms do not limit your statutory rights but simply ensure a safe, respectful space for all.
+      </div>
+
+      <!-- 1. Use of Our Digital and Physical Spaces -->
+      <div class="terms-section">
+        <h3>1. 🌱 Using the Sanctuary (Digital & Soil)</h3>
+        <p>YarrowBloom Sanctuary offers its website, articles, plant encyclopedia, educational resources, and physical garden visitation for personal, non-commercial, and educational enjoyment. You agree to:</p>
+        <ul>
+          <li>Use the website and grounds in a manner consistent with all applicable local, state, and federal laws.</li>
+          <li>Respect the living collections: no removing plants, seeds, or soil without explicit permission (seed library excepted).</li>
+          <li>Refrain from posting harmful, abusive, or disruptive content on any interactive features (future forums, guestbooks, or social media channels linked to the Sanctuary).</li>
+          <li>Not attempt to reverse-engineer, data-mine, or extract substantial portions of our content for commercial use. However, teachers and small-scale gardeners may print guides for non-commercial education with attribution.</li>
+        </ul>
+        <p>If you visit our physical sanctuary: please follow signage, stay on designated paths, respect seasonal closures, and leave no trace. Children must be supervised. We welcome leashed, well-behaved dogs, but please note that certain medicinal gardens are delicate — check at the welcome yurt.</p>
+      </div>
+
+      <!-- 2. Intellectual Property & Content Stewardship -->
+      <div class="terms-section">
+        <h3>2. 📖 The Living Library: Our Content & Your Rights</h3>
+        <p>All original content on this site — including but not limited to plant descriptions, gardening tutorials, photographs, illustrations, the “cream & blue” design, logos, and written narratives — is the intellectual property of YarrowBloom Sanctuary unless otherwise noted (e.g., CC0 seed images). The compendium of over 78,000 unique words, cultivar encyclopedia, and design motifs are protected by copyright and trademark laws.</p>
+        <h4>Permissible Sharing (We ❤️ Generosity)</h4>
+        <ul>
+          <li><strong>Personal Use:</strong> You may save, print, and share individual guides for personal, non-commercial gardening purposes.</li>
+          <li><strong>Attribution Required:</strong> If you quote or excerpt our work (e.g., a paragraph on regenerative no-till), you must credit “YarrowBloom Sanctuary” and link back to our site when feasible.</li>
+          <li><strong>Not Permitted:</strong> Republishing entire articles, scraping our database, selling any content, or using our imagery for commercial branding without prior written consent. For educational or nonprofit bulk use, please contact hello@yarrowbloomsanctuary.org — we often say yes.</li>
+        </ul>
+        <div class="oath-quote">
+          “We believe knowledge is a common root. Share generously, but honor the source — like passing a cutting from an heirloom rose.”
+        </div>
+      </div>
+
+      <!-- 3. Community and Conduct -->
+      <div class="terms-section">
+        <h3>3. 🫂 The Garden of Conversation: Respectful Conduct</h3>
+        <p>Although we currently offer minimal interactive features (e.g., a newsletter signup or future messaging), any public comment sections, workshop registrations, or social media tags are governed by kindness. You agree not to:</p>
+        <ul>
+          <li>Post violent, harassing, discriminatory, or spam content.</li>
+          <li>Impersonate Sanctuary staff or misrepresent affiliation.</li>
+          <li>Solicit other visitors for commercial ventures or pyramid schemes.</li>
+        </ul>
+        <p>We reserve the right to moderate, remove, or block any user whose conduct violates the Cream & Blue Ethos — prioritizing safety, inclusion, and ecological reverence. For any concerns, email hello@yarrowbloomsanctuary.org.</p>
+      </div>
+
+      <!-- 4. Donations, Events, & Product Sales -->
+      <div class="terms-section">
+        <h3>4. 🌸 Donations, Workshops, & Farmstand Purchases</h3>
+        <p>YarrowBloom Sanctuary is a registered 501(c)(3) nonprofit. Donations are tax-deductible to the fullest extent of the law (EIN: 88-1234567). When you register for a workshop (e.g., seed-saving, herbal apothecary) or purchase seedlings/merch from our farmstand or online store, the following terms apply:</p>
+        <ul>
+          <li>All sales are final for perishable plants and live goods. Workshop registrations can be transferred or refunded up to 7 days prior to the event, less a 10% processing fee.</li>
+          <li>We describe our plants and products with honesty; however, growing outcomes depend on conditions beyond our control. We do not guarantee germination rates or harvest yields.</li>
+          <li>Donations are non-refundable but can be redirected to a specific project (e.g., Seed Library) upon request within 30 days.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Disclaimer of Warranties & Liability -->
+      <div class="terms-section">
+        <h3>5. 🌿 Growing Edges: No Guarantees, Just Good Faith</h3>
+        <p>The content on this site — including gardening techniques, plant medicinal uses, soil recipes, and design principles — is provided for general informational and educational purposes only. While we draw from decades of experience and peer-reviewed sources, gardening involves variables (climate, pathogens, individual biology). You assume full responsibility for applying any advice.</p>
+        <p><strong>Limitation of liability:</strong> To the maximum extent permitted by law, YarrowBloom Sanctuary, its directors, volunteers, and stewards shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of our website, attendance at events, or reliance on any information provided. This includes crop failure, allergic reactions to plants, or personal injury while gardening on or off the sanctuary premises. Always patch-test herbal preparations and consult a physician for medical concerns.</p>
+        <div class="highlight-box">
+          ⚠️ <strong>Medicinal plants note:</strong> Our herbal apothecary articles are historical and educational; they are not medical advice. Please consult a qualified herbalist or doctor before ingesting any plant.
+        </div>
+      </div>
+
+      <!-- 6. Privacy & Data Collection -->
+      <div class="terms-section">
+        <h3>6. 🔐 Your Data & Our Promise</h3>
+        <p>Your privacy matters deeply. Our <a href="privacy.html" style="color: var(--blue-soft);">Privacy Policy</a> and <a href="cookies.html" style="color: var(--blue-soft);">Cookies Policy</a> explain how we collect, use, and protect any personal information (e.g., newsletter email addresses, workshop registrations). In brief: we never sell data, we use minimal necessary analytics, and you may unsubscribe at any moment with a single click. By using our site, you consent to the processing described in those policies.</p>
+      </div>
+
+      <!-- 7. Modifications to Terms -->
+      <div class="terms-section">
+        <h3>7. 📅 Seasons Change: Updates to These Terms</h3>
+        <p>We may revise these Terms from time to time to reflect legal updates, changes in our operations, or evolving ethical standards. The latest version will always be posted at /terms.html with the “Last updated” date. If changes are significant, we will notify you via a notice on our homepage or email (if you are subscribed). Your continued use of the Sanctuary after changes become effective constitutes acceptance of the revised Terms.</p>
+      </div>
+
+      <!-- 8. Termination of Access -->
+      <div class="terms-section">
+        <h3>8. 🚫 Grounds for Withdrawal</h3>
+        <p>We reserve the right to restrict or terminate access to any digital or physical aspect of the Sanctuary for any individual who violates these Terms, engages in abusive behavior, or endangers the safety of visitors, plants, or wildlife. Termination is at our sole discretion, and we will strive to provide a warning when possible, except in cases of egregious harm.</p>
+      </div>
+
+      <!-- 9. Governing Law & Dispute Resolution -->
+      <div class="terms-section">
+        <h3>9. ⚖️ Rooted in Vermont Law</h3>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of Vermont, without regard to its conflict of law principles. Any dispute arising from your use of the Sanctuary shall be first attempted to be resolved through good-faith mediation (we deeply value restorative dialogue). If mediation fails, exclusive jurisdiction lies in the state or federal courts located in Windham County, Vermont. Visitors from outside the US agree that they use the site voluntarily and assume all risks related to international data transfer.</p>
+      </div>
+
+      <!-- 10. Sanctuary Oath & Acknowledgment -->
+      <div class="terms-section">
+        <h3>🌼 10. Your Acknowledgment: A Gentle Agreement</h3>
+        <p>By continuing to explore YarrowBloom Sanctuary—whether you’re reading about blue poppies, strolling our compost demonstration site, or downloading a lunar planting calendar—you acknowledge that you have read, understood, and agree to be bound by these Terms of Service, the Privacy Policy, and the Cookies Policy. You also embrace the spirit of our <strong>Cream & Blue Ethos</strong>: a commitment to ecological kindness, mutual learning, and reverence for all beings.</p>
+        <div style="background: #eef3f0; padding: 1rem; border-radius: 1.2rem; margin-top: 1rem;">
+          <p>🌿 If you have questions about these Terms or wish to report a concern, please reach out:</p>
+          <p><strong>YarrowBloom Sanctuary (Legal & Stewardship)</strong><br>
+          📮 1423 Garden Lane, Harmony Valley, VT 05001<br>
+          ✉️ legal@yarrowbloomsanctuary.org  |  📞 +1 (802) 555-7420 (ask for administrative team)</p>
+        </div>
+      </div>
+
+      <hr>
+      <p style="font-size: 0.85rem; text-align: center;">These Terms were written with transparency and a gardening heart. They form the soil of trust between our sanctuary and you, the tender of green dreams. Thank you for helping us keep this place beautiful, respectful, and free.</p>
+    </div>
+
+    <!-- Additional cross-reference note for other policies -->
+    <div style="text-align: center; margin-top: 1rem;">
+      <p>📜 Also see our <a href="privacy.html" style="color: var(--blue-soft);">Privacy Policy</a> and <a href="cookies.html" style="color: var(--blue-soft);">Cookies Policy</a> for complete data transparency.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <p>📍 <strong>YarrowBloom Sanctuary</strong> — 1423 Garden Lane, Harmony Valley, VT 05001</p>
+        <p>📞 <strong>Sanctuary Phone:</strong> +1 (802) 555-7420  |  Mon–Sat 9am–6pm EST</p>
+        <p>🌿 <strong>Email:</strong> hello@yarrowbloomsanctuary.org</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 YarrowBloom Sanctuary — Cultivating cream & blue dreams. All rights reserved. Rooted in nature, rising with hope.</p>
+        <p>Photography & content inspired by regenerative gardening. Visit us for workshops & plant shares.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

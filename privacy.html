@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>YarrowBloom Sanctuary | Privacy Policy – Gentle Stewards of Your Data</title>
+  <meta name="description" content="Our privacy commitment – how YarrowBloom Sanctuary handles your personal information with the same care we give our cream & blue gardens.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: #1e3b4f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --cream-light: #fffdf7;
+      --blue-deep: #1e4a6b;
+      --blue-soft: #3b82b6;
+      --blue-pale: #cbdde6;
+      --accent-sage: #8ba888;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 2px solid #d9e2e8;
+      padding: 1.2rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      color: var(--blue-deep);
+      font-family: 'Trebuchet MS', 'Georgia', serif;
+    }
+    .logo span {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--blue-deep);
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--blue-soft);
+      color: var(--blue-soft);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #eef3f7, #fff7e8);
+      padding: 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--blue-pale);
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #2c5a6e;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .policy-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2rem 2.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede5;
+      margin-bottom: 2rem;
+    }
+
+    .policy-title {
+      font-size: 2rem;
+      color: var(--blue-deep);
+      border-left: 6px solid var(--blue-soft);
+      padding-left: 1.2rem;
+      margin-bottom: 1.8rem;
+      font-family: 'Trebuchet MS', serif;
+    }
+
+    .policy-section {
+      margin-bottom: 2rem;
+      scroll-margin-top: 2rem;
+    }
+    .policy-section h3 {
+      font-size: 1.6rem;
+      color: #2c6282;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .policy-section p, .policy-section li {
+      margin-bottom: 0.8rem;
+      color: #2b4f64;
+    }
+    .policy-section ul, .policy-section ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .highlight-box {
+      background: #fef7e8;
+      padding: 1rem 1.5rem;
+      border-radius: 1.5rem;
+      border-left: 5px solid var(--accent-sage);
+      margin: 1.2rem 0;
+    }
+    .badge-garden {
+      display: inline-block;
+      background: #e6f0f5;
+      padding: 0.2rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.8rem;
+    }
+    hr {
+      margin: 1.8rem 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, #e2dcca, transparent);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--cream);
+      padding: 0.5rem 1.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      color: var(--blue-deep);
+      font-weight: 500;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .back-link:hover {
+      background: #e9f0e6;
+      color: var(--blue-soft);
+    }
+    footer {
+      background: #1e3b4f;
+      color: #fef2df;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+    }
+    .footer-contact {
+      background: rgba(255,249,225,0.1);
+      padding: 0.8rem 1.8rem;
+      border-radius: 3rem;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+    }
+    .copyright {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-top: 1px solid #3e6c85;
+      padding-top: 1rem;
+    }
+    @media (max-width: 780px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .policy-title {
+        font-size: 1.8rem;
+      }
+      .policy-section h3 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <h1>🌿 YarrowBloom Sanctuary</h1>
+        <span>where gardens whisper & blue skies linger</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h2>🌱 Rooted in Respect & Transparency</h2>
+      <p>Your personal data is treated like a rare heirloom seed — protected, respected, and never scattered without care. Welcome to the YarrowBloom Sanctuary privacy practices.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="policy-card">
+      <h1 class="policy-title">Privacy Policy</h1>
+      <div class="badge-garden">Last updated: April 2025 — Blossom Season</div>
+      <p>At YarrowBloom Sanctuary (“we”, “us”, or “our”), we honor the connection between our community and the natural world. This Privacy Policy describes how we collect, use, disclose, and safeguard your personal information when you visit our website (the “Site”) or engage with our sanctuary services, workshops, or correspondence. We are committed to maintaining the same gentle stewardship for your data as we do for our cream & blue gardens.</p>
+
+      <div class="policy-section" id="collection">
+        <h3>🌸 1. Information We Collect</h3>
+        <p>We may collect the following types of information to enrich your experience and respond to your inquiries:</p>
+        <ul>
+          <li><strong>Personal Identifiers:</strong> Name, email address, phone number, and mailing address — only when voluntarily provided via our contact forms, workshop registrations, or seed exchange programs.</li>
+          <li><strong>Correspondence Data:</strong> Messages you send through our contact forms, gardening inquiries, volunteer applications, and any attachments you share with our team.</li>
+          <li><strong>Technical Roots:</strong> IP address, browser type, referring pages, and site interaction data (through cookies — see our <a href="cookies.html" style="color: var(--blue-soft);">Cookies Policy</a>).</li>
+          <li><strong>Gardening Preferences:</strong> With your explicit consent, we may store information about your favourite plants, climate zone, or workshop interests to tailor our communications.</li>
+        </ul>
+        <div class="highlight-box">
+          🌼 <strong>Children & minors:</strong> Our sanctuary welcomes young gardeners under adult supervision, but we do not knowingly collect personal data from children under 16. If you believe a child has provided us with information, please contact us and we will delete it promptly.
+        </div>
+      </div>
+
+      <div class="policy-section" id="use">
+        <h3>📬 2. How We Use Your Information</h3>
+        <p>Every seed of data is used with intention, mirroring our ethical gardening philosophy:</p>
+        <ul>
+          <li>Respond to inquiries, schedule visits, provide gardening advice, and share sanctuary news (events, workshops, full moon seed swaps).</li>
+          <li>Improve our website content and user experience — we analyse aggregated data to see which plants and resources inspire our community most.</li>
+          <li>Send occasional seasonal newsletters (only if you opt-in via the contact form or explicit checkbox). You may unsubscribe anytime; each email contains a simple ‘unsubscribe’ link.</li>
+          <li>Process volunteer applications, workshop registrations, and donations. We never sell, rent, or trade your personal data to third parties for marketing.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="sharing">
+        <h3>🌿 3. Sharing & Disclosure</h3>
+        <p>YarrowBloom Sanctuary does not sell or rent your personal information. Limited sharing occurs only in these necessary cases:</p>
+        <ul>
+          <li><strong>Service Providers:</strong> We may engage trusted third parties (e.g., email delivery platforms, secure payment processors for workshops) who act under strict confidentiality agreements and only process data on our behalf.</li>
+          <li><strong>Legal Obligations:</strong> If required by law or to protect the safety, rights, or property of our sanctuary, staff, or community.</li>
+          <li><strong>Consent:</strong> When you give explicit permission, such as sharing a testimonial on our social media or garden gallery.</li>
+        </ul>
+        <p>Any data shared remains under the protective canopy of this policy and applicable privacy regulations (GDPR & CCPA aligned).</p>
+      </div>
+
+      <div class="policy-section" id="cookies">
+        <h3>🍪 4. Cookies & Online Tools</h3>
+        <p>We use light-touch cookies to enhance your browsing — similar to how bees gently touch flowers. Cookies help us remember language preferences, analyze visitor flow, and support security. You can review your choices in our dedicated <a href="cookies.html" style="color: var(--blue-soft);">Cookies Policy</a>. You may disable cookies in your browser settings, though some features may feel less personal.</p>
+      </div>
+
+      <div class="policy-section" id="rights">
+        <h3>✉️ 5. Your Data Rights & Choices</h3>
+        <p>You retain ownership of your garden story. Depending on your location, you may have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> — request a copy of personal data we hold about you.</li>
+          <li><strong>Correction</strong> — update any inaccurate or incomplete information.</li>
+          <li><strong>Deletion</strong> — ask us to remove your data (“right to be forgotten”).</li>
+          <li><strong>Restriction/objection</strong> — limit how we use your data for certain purposes.</li>
+          <li><strong>Portability</strong> — receive your data in a structured, machine-readable format.</li>
+        </ul>
+        <p>To exercise any of these rights, email us at <strong>privacy@yarrowbloomsanctuary.org</strong> or use our contact form. We will verify your identity and respond within 30 days. You will never be discriminated against for exercising your privacy rights.</p>
+        <div class="highlight-box">
+          🌱 <strong>California & GDPR notice:</strong> If you are a California resident, you have the right to request information about any sharing of personal data for direct marketing purposes (we do none). For EEA residents, we rely on legitimate interests or contractual necessity for processing; you may lodge a complaint with your local Data Protection Authority.
+        </div>
+      </div>
+
+      <div class="policy-section" id="retention">
+        <h3>⏳ 6. Data Retention & Security</h3>
+        <p>We retain personal data only as long as needed to fulfill the purposes outlined in this policy, or as required by law (e.g., transaction records for 7 years for tax compliance). Inactive contact records are anonymized after two years of silence. We employ administrative, technical, and physical safeguards — encrypted databases, restricted access, and regular security reviews — to protect against unauthorized access or disclosure. However, no internet transmission is 100% secure, but we strive to mirror the resilience of a wildflower meadow.</p>
+      </div>
+
+      <div class="policy-section" id="thirdparty">
+        <h3>🔗 7. Third-Party Links</h3>
+        <p>Our website may include links to partner organizations, gardening resources, or social media platforms. This Privacy Policy does not apply to those external sites. We encourage you to review the privacy policies of any third-party websites you visit. We are not responsible for the content or data practices of others.</p>
+      </div>
+
+      <div class="policy-section" id="changes">
+        <h3>🍃 8. Updates to This Policy</h3>
+        <p>As our garden grows, this Privacy Policy may be updated to reflect new practices or legal requirements. We will post any changes on this page, and for significant modifications, we may notify you by email or via a notice on our homepage. The "Last updated" date at the top indicates when the policy was last revised. Your continued use of our site after changes means you accept the updated policy.</p>
+      </div>
+
+      <div class="policy-section" id="contactprivacy">
+        <h3>📮 9. Contact Our Data Steward (the Head Gardener of Privacy)</h3>
+        <p>If you have questions, concerns, or wish to make a data request, please reach out to our privacy team — we promise a human reply, never a robotic loop:</p>
+        <p>🌿 <strong>YarrowBloom Sanctuary – Privacy Office</strong><br>
+        1423 Garden Lane, Harmony Valley, VT 05001, USA<br>
+        ✉️ <strong>Email:</strong> privacy@yarrowbloomsanctuary.org<br>
+        📞 <strong>Phone:</strong> +1 (802) 555-7420 (ask for the Data Steward)</p>
+        <p>You may also use our <a href="contact.html" style="color: var(--blue-soft);">general contact form</a> and mark ‘Privacy Inquiry’ as the subject. We will respond with the same kindness as a spring rain.</p>
+      </div>
+      <hr>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; align-items: center;">
+        <p style="font-size: 0.9rem;"><strong>🌿 Acknowledgement:</strong> By engaging with YarrowBloom Sanctuary, you acknowledge this Privacy Policy. We believe in transparency rooted in trust — just like the mycelium networks beneath our gardens.</p>
+        <a href="contact.html" class="back-link">📬 Return to Contact & Sanctuary Gates →</a>
+      </div>
+    </div>
+
+    <!-- Additional natural content: Q&A about privacy + reassurance (extra richness) -->
+    <div style="background: #ebf2e9; border-radius: 1.8rem; padding: 1.8rem; margin-top: 1rem;">
+      <h3 style="color: var(--blue-deep); display: flex; gap: 0.6rem;">🌻 Gardener’s Privacy Pledge — FAQs from our community</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
+        <div style="flex: 1; min-width: 200px;">
+          <p><strong>❝ Do you share my email with nurseries or advertisers? ❞</strong><br>Never. Your email is safe with us — we only send occasional sanctuary updates if you opted in. No third-party marketing.</p>
+          <p><strong>❝ What about my workshop payment details? ❞</strong><br>Payments are processed via secure gateways (Stripe/PayPal), and we never store full credit card information.</p>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+          <p><strong>❝ Can I browse anonymously? ❞</strong><br>Absolutely. Our website does not require personal data for reading gardening articles or exploring events; only forms ask for info.</p>
+          <p><strong>❝ How do I delete my email from the newsletter list? ❞</strong><br>Click ‘unsubscribe’ at the bottom of any newsletter, or email privacy@ with ‘unsubscribe’ in the subject line.</p>
+        </div>
+      </div>
+      <div class="highlight-box" style="margin-top: 1rem; background: #fbf5e3;">
+        🌼 The sanctuary is committed to annual privacy audits. We take inspiration from regenerative practices — protecting your data like a pollinator corridor.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <p>📍 <strong>YarrowBloom Sanctuary</strong> — 1423 Garden Lane, Harmony Valley, VT 05001</p>
+        <p>📞 <strong>Sanctuary Phone:</strong> +1 (802) 555-7420  |  Mon–Sat 9am–6pm EST</p>
+        <p>🌿 <strong>Email:</strong> hello@yarrowbloomsanctuary.org  |  privacy@yarrowbloomsanctuary.org</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 YarrowBloom Sanctuary — Cultivating cream & blue dreams. All rights reserved. Rooted in nature, rising with hope.</p>
+        <p>Your privacy is part of our soil stewardship. Read our <a href="privacy.html" style="color: #f0dbb2;">Privacy Policy</a> & <a href="cookies.html" style="color: #f0dbb2;">Cookies Policy</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // subtle interactive flourish: any anchor link with # smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        if (targetId) {
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+    // dynamic footnote: optional tiny interaction for policy card reading
+    const backLink = document.querySelector('.back-link');
+    if(backLink) {
+      backLink.addEventListener('mouseenter', () => {
+        backLink.style.transform = 'translateX(4px)';
+      });
+      backLink.addEventListener('mouseleave', () => {
+        backLink.style.transform = 'translateX(0)';
+      });
+    }
+    // add gentle highlight to navigation current page indicator (privacy)
+    const currentNav = document.querySelectorAll('.nav-links a');
+    currentNav.forEach(link => {
+      if(link.getAttribute('href') === 'privacy.html' || (link.pathname && link.pathname.includes('privacy'))) {
+        link.style.borderBottom = '2px solid var(--blue-soft)';
+        link.style.fontWeight = '600';
+      }
+    });
+  </script>
+</body>
+</html>

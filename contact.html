@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>YarrowBloom Sanctuary | Connect with Our Garden Community</title>
+  <meta name="description" content="Reach the heart of YarrowBloom Sanctuary – get in touch for gardening wisdom, workshop inquiries, or simply to share your love for cream & blue blooms.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;  /* warm cream base */
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: #1e3b4f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --cream-light: #fffdf7;
+      --blue-deep: #1e4a6b;
+      --blue-soft: #3b82b6;
+      --blue-pale: #cbdde6;
+      --accent-sage: #8ba888;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    /* header & navigation (matching home page) */
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 2px solid #d9e2e8;
+      padding: 1.2rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      color: var(--blue-deep);
+      font-family: 'Trebuchet MS', 'Georgia', serif;
+    }
+    .logo span {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--blue-deep);
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--blue-soft);
+      color: var(--blue-soft);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #eef3f7, #fff7e8);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--blue-pale);
+    }
+    .hero h2 {
+      font-size: 2.4rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #2c5a6e;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    /* contact grid: form + details + map */
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .contact-form-wrapper {
+      flex: 2;
+      min-width: 260px;
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede5;
+    }
+    .contact-info {
+      flex: 1.2;
+      background: var(--cream-light);
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--blue-soft);
+    }
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--blue-deep);
+      margin-bottom: 1.2rem;
+      border-left: 5px solid var(--blue-soft);
+      padding-left: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: #1e4a6b;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #d4dfe4;
+      border-radius: 2rem;
+      font-family: 'Georgia', serif;
+      background: #fffef9;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--blue-soft);
+      box-shadow: 0 0 0 3px rgba(59,130,182,0.1);
+    }
+    textarea {
+      border-radius: 1.5rem;
+      resize: vertical;
+    }
+    .btn-submit {
+      background: var(--blue-deep);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 3rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      font-family: inherit;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .btn-submit:hover {
+      background: #2c6282;
+      transform: scale(0.98);
+    }
+    .info-detail p {
+      margin: 1.2rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1rem;
+    }
+    .info-detail strong {
+      color: var(--blue-deep);
+      min-width: 85px;
+    }
+    .opening-hours {
+      background: #eef3f0;
+      padding: 1rem 1.2rem;
+      border-radius: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .social-links {
+      margin-top: 2rem;
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 1.2rem;
+      color: var(--blue-deep);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted var(--blue-pale);
+    }
+    .social-links a:hover {
+      color: var(--blue-soft);
+    }
+    .map-placeholder {
+      margin-top: 2rem;
+      background: #e1e9ef;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      border: 1px solid #cbdde6;
+    }
+    .map-placeholder iframe {
+      width: 100%;
+      border-radius: 1.2rem;
+      height: 220px;
+      border: none;
+    }
+
+    /* garden note & extra content (richness) */
+    .garden-note {
+      background: white;
+      border-radius: 2rem;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      border: 1px solid #efe6d8;
+      box-shadow: var(--shadow-sm);
+    }
+    .garden-note h3 {
+      color: var(--blue-deep);
+      margin-bottom: 0.6rem;
+      font-size: 1.4rem;
+    }
+    .testimonial-badge {
+      display: inline-block;
+      background: #fef1df;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.8rem;
+      color: #3b5e7a;
+    }
+
+    footer {
+      background: #1e3b4f;
+      color: #fef2df;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+    }
+    .footer-contact {
+      background: rgba(255,249,225,0.1);
+      padding: 0.8rem 1.8rem;
+      border-radius: 3rem;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+    }
+    .copyright {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-top: 1px solid #3e6c85;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 780px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .contact-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <h1>🌿 YarrowBloom Sanctuary</h1>
+        <span>where gardens whisper & blue skies linger</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h2>“Every seed of inquiry blossoms into connection.”</h2>
+      <p>Reach out to our sanctuary stewards — whether for horticultural guidance, visiting hours, or simply to share a garden story.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <h2 class="section-title">🌼 Send a petal message</h2>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required placeholder="e.g., Elara Greenwood">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="hello@bloomgardener.com">
+          </div>
+          <div class="form-group">
+            <label for="inquiry">Inquiry type</label>
+            <select id="inquiry" name="inquiry">
+              <option value="workshop">Workshop / Tour</option>
+              <option value="gardening">Gardening Advice</option>
+              <option value="volunteer">Volunteer & Sanctuary</option>
+              <option value="partnership">Partnership or Media</option>
+              <option value="other">General Whisper</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message to the garden *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Share your questions, thoughts, or favorite blue & cream plant..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send rooted note 🌱</button>
+          <p style="font-size: 0.75rem; margin-top: 1rem; color: #5b7c8f;">* We reply within 48 hours — your details stay wild & respected.</p>
+        </form>
+        <div id="formFeedback" style="margin-top: 1.2rem; font-style: italic; color: #3b82b6;"></div>
+      </div>
+
+      <!-- Sanctuary Contact Info + Map -->
+      <div class="contact-info">
+        <h2 class="section-title">📮 Sanctuary Gates</h2>
+        <div class="info-detail">
+          <p><strong>📍 Address</strong> 1423 Garden Lane, Harmony Valley, VT 05001</p>
+          <p><strong>📞 Phone</strong> +1 (802) 555-7420</p>
+          <p><strong>🌿 Email</strong> hello@yarrowbloomsanctuary.org</p>
+          <div class="opening-hours">
+            <p><strong>🕊️ Visiting Hours</strong><br>
+            Mon–Sat: 9:00am – 6:00pm EST<br>
+            Sunday: 10:00am – 4:00pm (Bloom meditation hour)<br>
+            *Closed on major holidays, but always open online.</p>
+          </div>
+          <p><strong>🌻 Garden Hotline</strong><br>For plant emergencies or pruning questions, call our head horticulturist line: +1 (802) 555-2091 (Mon–Fri 10–2).</p>
+        </div>
+
+        <!-- Simple map embed with cream/blue nature (static but charming) -->
+        <div class="map-placeholder">
+          <p style="margin-bottom: 0.5rem;">🌸 Find us among the lavender hills & blue rivers</p>
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-72.7%2C44.05%2C-72.5%2C44.15&layer=mapnik&marker=44.1%2C-72.6" title="YarrowBloom Sanctuary map location" loading="lazy"></iframe>
+          <p style="font-size: 0.75rem; margin-top: 0.5rem;">Harmony Valley, bordered by cream meadows & blue sage wetlands.</p>
+        </div>
+
+        <div class="social-links">
+          <p><strong>🌼 Digital greenhouse corners</strong></p>
+          <a href="#">Instagram: @yarrowbloom</a>
+          <a href="#">Pinterest: /sanctuarygardens</a>
+          <a href="#">Facebook: YarrowBloom Sanctuary</a>
+          <a href="#">Threads: @gardenwhispers</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra meaningful content: community & question answers (makes page rich and unique) -->
+    <div class="garden-note">
+      <h3>💬 Ask the Gardeners — frequent sanctuary queries</h3>
+      <div class="testimonial-badge">✨ 78,000+ words of wisdom & personalized help</div>
+      <p><strong>❝ Can I visit the famous Cream & Blue border? ❞</strong> — Absolutely! Our sanctuary gardens are open for self-guided tours every Wednesday and Saturday from 1–5pm. Please pre-register via the contact form or phone. We offer guided herbal walks and moon-gazing evenings.</p>
+      <p><strong>❝ How do I join the seed exchange? ❞</strong> — Every full moon, we host a community seed swap at the YarrowBarn. Send us an email with "seed steward" in the subject line to receive our seasonal calendar. Over 200 heirloom varieties available.</p>
+      <p><strong>❝ I'd love to volunteer and learn about no-dig methods. ❞</strong> — Wonderful! We host volunteer days each first Saturday. Reach out and we’ll send you the waiver and tool list. Tea and biscuits provided.</p>
+      <hr style="margin: 1rem 0; border-color: #dbebf0;">
+      <p>🌿 <strong>Beyond the contact form:</strong> YarrowBloom Sanctuary believes that every gardener's voice matters. We answer all inquiries with a personal note — often including plant recommendations from our "blue soul collection" or a digital cream-colored botanical print. You may also leave a voicemail at our sanctuary phone, and we'll return your call with seasonal advice. Let’s tend the earth together.</p>
+    </div>
+
+    <!-- Additional garden note - directions, accessibility -->
+    <div class="garden-note">
+      <h3>🚲 Journey to Sanctuary — directions & accessibility</h3>
+      <p>Nestled in the poetic Harmony Valley, we are 5 miles from the Greenleaf Train Station (Route 7). Ample parking for electric vehicles and bikes. Our grounds are wheelchair-friendly, with smooth gravel pathways and raised cream-colored wooden borders. Service animals always welcome. For bus schedules or carpool connections, please send a quick note — we’ll connect you with our Bloom Community Board. <strong>From downtown Bluefield:</strong> follow River Road west for 2.3 miles, then turn onto Garden Lane; you'll see the iconic blue gate and yarrow-lined driveway.</p>
+      <p>We also offer virtual consultations via video call: select 'Gardening Advice' on the contact form and we’ll schedule a free 20-minute session to diagnose plant troubles, design small sanctuaries, or identify pollinators.</p>
+      <p><em>“The sanctuary is not just a place — it’s a conversation between soil and soul.”</em> — Margot Birch, founder.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <p>📍 <strong>YarrowBloom Sanctuary</strong> — 1423 Garden Lane, Harmony Valley, VT 05001</p>
+        <p>📞 <strong>Sanctuary Phone:</strong> +1 (802) 555-7420  |  Mon–Sat 9am–6pm EST</p>
+        <p>🌿 <strong>Email:</strong> hello@yarrowbloomsanctuary.org</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 YarrowBloom Sanctuary — Cultivating cream & blue dreams. All rights reserved. Rooted in nature, rising with hope.</p>
+        <p>Photography & content inspired by regenerative gardening. Visit us for workshops & plant shares.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple form interaction simulation with validation and friendly feedback -->
+  <script>
+    (function() {
+      const form = document.getElementById('contactForm');
+      const feedbackDiv = document.getElementById('formFeedback');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = document.getElementById('name')?.value.trim();
+          const email = document.getElementById('email')?.value.trim();
+          const message = document.getElementById('message')?.value.trim();
+          if (!name || !email || !message) {
+            feedbackDiv.innerHTML = '🌿 Please fill in all required fields (name, email, message). Let your words bloom.';
+            feedbackDiv.style.color = '#ab7150';
+            return;
+          }
+          if (!email.includes('@') || !email.includes('.')) {
+            feedbackDiv.innerHTML = '💙 Please provide a valid email address so we can send you a seedling of reply.';
+            feedbackDiv.style.color = '#ab7150';
+            return;
+          }
+          feedbackDiv.innerHTML = '✨ Thank you, ' + name + '! Your message has been carried by the wind to our sanctuary. We’ll reply within 48 hours with blue-sky guidance. 🌼';
+          feedbackDiv.style.color = '#1e6b4f';
+          form.reset();
+          setTimeout(() => {
+            feedbackDiv.innerHTML = '';
+          }, 7000);
+        });
+      }
+
+      // optional smooth hover / interactive placeholder - nothing invasive
+      const inputs = document.querySelectorAll('input, textarea, select');
+      inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+          input.style.backgroundColor = '#fffcf0';
+        });
+        input.addEventListener('blur', () => {
+          input.style.backgroundColor = '#fffef9';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

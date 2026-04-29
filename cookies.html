@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>YarrowBloom Sanctuary | Cookies Policy – Gentle & Transparent Bites</title>
+  <meta name="description" content="Our cookies policy explains how we use light-touch cookies at YarrowBloom Sanctuary — respecting your privacy and giving you control, just like choosing your favorite tea.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: #1e3b4f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --cream-light: #fffdf7;
+      --blue-deep: #1e4a6b;
+      --blue-soft: #3b82b6;
+      --blue-pale: #cbdde6;
+      --accent-sage: #8ba888;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 2px solid #d9e2e8;
+      padding: 1.2rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      color: var(--blue-deep);
+      font-family: 'Trebuchet MS', 'Georgia', serif;
+    }
+    .logo span {
+      font-weight: normal;
+      font-size: 0.9rem;
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--blue-deep);
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--blue-soft);
+      color: var(--blue-soft);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #eef3f7, #fff7e8);
+      padding: 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--blue-pale);
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #2c5a6e;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .policy-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2rem 2.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede5;
+      margin-bottom: 2rem;
+    }
+
+    .policy-title {
+      font-size: 2rem;
+      color: var(--blue-deep);
+      border-left: 6px solid var(--blue-soft);
+      padding-left: 1.2rem;
+      margin-bottom: 1.8rem;
+      font-family: 'Trebuchet MS', serif;
+    }
+
+    .policy-section {
+      margin-bottom: 2rem;
+      scroll-margin-top: 2rem;
+    }
+    .policy-section h3 {
+      font-size: 1.6rem;
+      color: #2c6282;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .policy-section p, .policy-section li {
+      margin-bottom: 0.8rem;
+      color: #2b4f64;
+    }
+    .policy-section ul, .policy-section ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .highlight-box {
+      background: #fef7e8;
+      padding: 1rem 1.5rem;
+      border-radius: 1.5rem;
+      border-left: 5px solid var(--accent-sage);
+      margin: 1.2rem 0;
+    }
+    .badge-garden {
+      display: inline-block;
+      background: #e6f0f5;
+      padding: 0.2rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.8rem;
+    }
+    hr {
+      margin: 1.8rem 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, #e2dcca, transparent);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--cream);
+      padding: 0.5rem 1.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      color: var(--blue-deep);
+      font-weight: 500;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .back-link:hover {
+      background: #e9f0e6;
+      color: var(--blue-soft);
+    }
+    /* cookie preference button */
+    .cookie-pref-btn {
+      background: var(--blue-soft);
+      border: none;
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2.5rem;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .cookie-pref-btn:hover {
+      background: #1e5a7a;
+      transform: translateY(-1px);
+    }
+    .cookie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1rem 0;
+    }
+    .cookie-type {
+      background: #faf7f0;
+      border-radius: 1.5rem;
+      padding: 1rem 1.4rem;
+      flex: 1 1 200px;
+      border: 1px solid #e7e0d2;
+    }
+    footer {
+      background: #1e3b4f;
+      color: #fef2df;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+    }
+    .footer-contact {
+      background: rgba(255,249,225,0.1);
+      padding: 0.8rem 1.8rem;
+      border-radius: 3rem;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+    }
+    .copyright {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-top: 1px solid #3e6c85;
+      padding-top: 1rem;
+    }
+    @media (max-width: 780px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .policy-title {
+        font-size: 1.8rem;
+      }
+      .policy-section h3 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <h1>🌿 YarrowBloom Sanctuary</h1>
+        <span>where gardens whisper & blue skies linger</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h2>🍪 Mindful Bites: Our Cookies Philosophy</h2>
+      <p>Just like a honeybee sips nectar without harm, our cookies enhance your journey while respecting your choices. Easy, transparent, and always under your control.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="policy-card">
+      <h1 class="policy-title">Cookies Policy</h1>
+      <div class="badge-garden">Last updated: April 2025 — Gentle Bloom Edition</div>
+      <p>At YarrowBloom Sanctuary (“we”, “us”, “our”), we believe in honest transparency — whether in our gardens or on our website. This Cookies Policy explains what cookies are, how we use them, and how you can manage your preferences. By continuing to use our Site, you agree to our use of cookies as described, unless you have set your browser to reject them. But don’t worry — you’re always in the gardener’s seat.</p>
+
+      <div class="policy-section" id="what-are-cookies">
+        <h3>🌾 1. What Are Cookies?</h3>
+        <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit websites. They help us remember your preferences, understand how visitors interact with our content, and ensure the site works smoothly. Think of them as tiny compost helpers — invisible but useful, and never intrusive.</p>
+      </div>
+
+      <div class="policy-section" id="our-cookies">
+        <h3>🍃 2. How We Use Cookies at YarrowBloom Sanctuary</h3>
+        <p>We use only minimal, respectful cookies — nothing like the industrial tracking gardens. Our cookies fall into these categories:</p>
+        <div class="cookie-grid">
+          <div class="cookie-type"><strong>🌼 Essential Cookies</strong><br>Needed for site functionality (e.g., security, navigation, form submissions). No consent required, but always benign.</div>
+          <div class="cookie-type"><strong>📊 Preference Cookies</strong><br>Remember your language or display choices (like dark/light mode — not active yet but future friendly).</div>
+          <div class="cookie-type"><strong>📈 Analytics Cookies</strong><br>We use lightweight analytics (like plausible or anonymized counters) to see which garden articles inspire you most — no personal identifiers.</div>
+          <div class="cookie-type"><strong>🌿 Functional</strong><br>Help with embedded content (e.g., a workshop calendar) — but only if you interact.</div>
+        </div>
+        <p>Importantly: We never use advertising cookies, tracking pixels, or share cookie data with third-party advertisers. Your digital footprints stay within our sanctuary grounds.</p>
+      </div>
+
+      <div class="policy-section" id="specific-cookies">
+        <h3>📜 3. Specific Cookies We May Place</h3>
+        <ul>
+          <li><strong>cookie_consent_preference:</strong> Stores your cookie consent choice (lifetime: 6 months).</li>
+          <li><strong>session_id:</strong> Temporary cookie that expires when you close your browser, used to recognize you during a single site visit.</li>
+          <li><strong>preferred_language:</strong> If you were to select a language (English default) — stores choice for 1 year.</li>
+          <li><strong>visit_source:</strong> Anonymized, non-personal referrer info to improve garden paths (deleted after 30 days).</li>
+        </ul>
+        <div class="highlight-box">
+          🧺 <strong>No 'forever' cookies:</strong> All cookies set by YarrowBloom Sanctuary have limited lifetimes — because nature renews itself, so does your data footprint.
+        </div>
+      </div>
+
+      <div class="policy-section" id="manage-preferences">
+        <h3>⚙️ 4. Your Control – Manage Cookie Preferences</h3>
+        <p>You are the guardian of your own digital garden. You can:</p>
+        <ul>
+          <li><strong>Opt-out of analytics cookies</strong> via our preference tool (see button below).</li>
+          <li><strong>Set your browser</strong> to block cookies or alert you when cookies are sent. However, disabling essential cookies may affect some features (like completing a workshop registration).</li>
+          <li><strong>Withdraw consent anytime</strong> by clearing your cookies or changing settings below.</li>
+        </ul>
+        <button id="openCookiePreferences" class="cookie-pref-btn">🌱 Change My Cookie Preferences</button>
+        <p style="margin-top: 0.8rem; font-size: 0.9rem;">Click the button above to update your consent preferences for analytics and non-essential cookies. We’ll remember your choice.</p>
+      </div>
+
+      <div class="policy-section" id="third-party-cookies">
+        <h3>🔗 5. Third-Party Cookies & External Links</h3>
+        <p>Occasionally we embed content from trusted partners (e.g., a virtual garden tour via Vimeo, or plant identification tool). These third-party services may set their own cookies. We do not control those cookies, and we encourage you to review their policies. However, we only embed services that align with our privacy ethos. Examples: Vimeo (privacy-respecting video), and open-source map tiles — no Google Analytics or Facebook pixels.</p>
+        <p>Our website may contain links to other nature-oriented sites. This Cookies Policy does not apply to them.</p>
+      </div>
+
+      <div class="policy-section" id="consent">
+        <h3>🍃 6. Consent & Legal Basis</h3>
+        <p>When you first visit our website, a cookie banner will ask for your consent for non-essential cookies (analytics and preference cookies). By clicking “Accept All” or “Accept Necessary Only” you give (or withhold) your permission. You can change your mind anytime using the button above. Essential cookies are always active because they make the site work properly — they don’t collect personal data for tracking.</p>
+        <div class="highlight-box">
+          🌸 <strong>GDPR & ePrivacy aligned:</strong> We follow European and US state privacy principles. Your cookie choices are fully respected and stored securely.
+        </div>
+      </div>
+
+      <div class="policy-section" id="updates">
+        <h3>🌼 7. Updates to This Cookies Policy</h3>
+        <p>Occasionally, we may update our cookie practices to reflect new features or legal requirements. Any changes will be posted on this page with a revised “Last updated” date. If changes are significant, we’ll notify you via a notice on our homepage. Your continued use means acceptance of the revised policy.</p>
+      </div>
+
+      <div class="policy-section" id="contact">
+        <h3>📮 8. Questions? Reach Out to Our Cookie Steward</h3>
+        <p>If you have any questions about our use of cookies or would like to request information, please contact our privacy team — we answer with warmth and clarity:</p>
+        <p>🌿 <strong>YarrowBloom Sanctuary – Privacy Office</strong><br>
+        1423 Garden Lane, Harmony Valley, VT 05001, USA<br>
+        ✉️ <strong>Email:</strong> privacy@yarrowbloomsanctuary.org<br>
+        📞 <strong>Phone:</strong> +1 (802) 555-7420 (ask for the Data Steward)</p>
+        <p>You can also use our contact form and mention “Cookie inquiry”. We will respond within 15 business days (often faster, like a sprouting seed).</p>
+      </div>
+      <hr>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; align-items: center;">
+        <p style="font-size: 0.9rem;"><strong>🍪 A final crumb:</strong> Our cookies are as gentle as morning dew. For details about broader data collection, please see our <a href="privacy.html" style="color: var(--blue-soft);">Privacy Policy</a>.</p>
+        <a href="index.html" class="back-link">🏡 Return to Sanctuary Home →</a>
+      </div>
+    </div>
+
+    <!-- Extra educational block about cookie elimination -->
+    <div style="background: #eef4e8; border-radius: 1.8rem; padding: 1.8rem; margin-top: 1rem;">
+      <h3 style="color: var(--blue-deep); display: flex; gap: 0.6rem;">🧑‍🌾 Frequently Asked: Cookie Clarity Corner</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
+        <div style="flex: 1;">
+          <p><strong>❓ Do cookies mean you can see my personal identity?</strong><br>No. Our cookies never store your name, email, or address. They only store anonymous IDs or functional preferences.</p>
+          <p><strong>❓ Can I still browse if I disable all cookies?</strong><br>Absolutely! You will still enjoy our garden gallery, blog, and articles. Only interactive forms might lose some convenience (eg. language memory).</p>
+        </div>
+        <div style="flex: 1;">
+          <p><strong>❓ How often do you review your cookie list?</strong><br>We perform a cookie audit twice a year and whenever we add new digital features. Transparency is part of our sanctuary promise.</p>
+          <p><strong>❓ Do you use fingerprinting or supercookies?</strong><br>Never. We find those invasive, just like plastic in a garden.</p>
+        </div>
+      </div>
+    </div>
+    <!-- simulated cookie preference modal (light and in-page, non-intrusive) -->
+    <div id="cookieModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); backdrop-filter: blur(3px); align-items: center; justify-content: center; z-index: 1000;">
+      <div style="background: white; max-width: 460px; margin: 2rem; border-radius: 2rem; padding: 1.8rem; box-shadow: 0 20px 30px rgba(0,0,0,0.2); border-top: 6px solid var(--blue-soft);">
+        <h3 style="color: var(--blue-deep); margin-bottom: 0.5rem;">🍪 Cookie Preferences</h3>
+        <p>You can decide which non-essential cookies to allow. Essential cookies are always active.</p>
+        <div style="margin: 1rem 0;">
+          <label style="display: flex; gap: 0.8rem; align-items: center; margin-bottom: 1rem;">
+            <input type="checkbox" id="analyticsCheckbox" checked> <span><strong>Analytics cookies</strong> — help us understand how visitors use the site (anonymized data).</span>
+          </label>
+          <label style="display: flex; gap: 0.8rem; align-items: center;">
+            <input type="checkbox" id="prefCheckbox" checked> <span><strong>Preference cookies</strong> — remember your settings like language or layout.</span>
+          </label>
+          <p style="font-size: 0.8rem; margin-top: 1rem; background: #f7f3ea; padding: 0.6rem; border-radius: 1rem;">Your current choice will be saved for 6 months. You can update anytime.</p>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+          <button id="saveCookiePref" style="background: var(--blue-soft); border: none; padding: 0.5rem 1.4rem; border-radius: 2rem; color: white; cursor: pointer;">Save Preferences</button>
+          <button id="closeModalBtn" style="background: #e9e1d2; border: none; padding: 0.5rem 1.2rem; border-radius: 2rem; cursor: pointer;">Close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <p>📍 <strong>YarrowBloom Sanctuary</strong> — 1423 Garden Lane, Harmony Valley, VT 05001</p>
+        <p>📞 <strong>Sanctuary Phone:</strong> +1 (802) 555-7420  |  Mon–Sat 9am–6pm EST</p>
+        <p>🌿 <strong>Email:</strong> hello@yarrowbloomsanctuary.org  |  privacy@yarrowbloomsanctuary.org</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 YarrowBloom Sanctuary — Cultivating cream & blue dreams. All rights reserved. Rooted in nature, rising with hope.</p>
+        <p>Your privacy is part of our soil stewardship. Read our <a href="privacy.html" style="color: #f0dbb2;">Privacy Policy</a> & <a href="cookies.html" style="color: #f0dbb2;">Cookies Policy</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // --- cookie consent logic (simulate but functional for preferences)
+      function setCookiePreference(prefAnalytics, prefPreferences) {
+        const expiryDate = new Date();
+        expiryDate.setMonth(expiryDate.getMonth() + 6);
+        const cookieValue = JSON.stringify({ analytics: prefAnalytics, preferences: prefPreferences, version: 1 });
+        document.cookie = `cookie_settings=${encodeURIComponent(cookieValue)}; expires=${expiryDate.toUTCString()}; path=/; SameSite=Lax`;
+        // Also store in localStorage as a fallback indicator
+        localStorage.setItem('yarrow_cookie_pref', cookieValue);
+      }
+
+      function getCookiePreference() {
+        const cookieMatch = document.cookie.match(/cookie_settings=([^;]+)/);
+        if (cookieMatch) {
+          try {
+            return JSON.parse(decodeURIComponent(cookieMatch[1]));
+          } catch(e) { return null; }
+        }
+        const localPref = localStorage.getItem('yarrow_cookie_pref');
+        if (localPref) {
+          try {
+            return JSON.parse(localPref);
+          } catch(e) { return null; }
+        }
+        return null;
+      }
+
+      function applyConsentToAnalytics() {
+        const prefs = getCookiePreference();
+        // if prefs exist and analytics false -> disable any analytics related script / or just simulate. but we don't actually load extra analytics scripts.
+        // For clarity we just respect presence. On a real environment we would enable/disable GA events. Here we just show console respect.
+        if (prefs && prefs.analytics === false) {
+          console.log("[YarrowBloom] Analytics cookies disabled by user.");
+          // could also set a data attribute but this is illustrative.
+          document.body.setAttribute('data-analytics-consent', 'denied');
+        } else {
+          document.body.setAttribute('data-analytics-consent', 'granted');
+          // (no actual tracking implemented)
+        }
+      }
+
+      // modal controls
+      const modal = document.getElementById('cookieModal');
+      const openBtn = document.getElementById('openCookiePreferences');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const savePrefBtn = document.getElementById('saveCookiePref');
+      const analyticsCheckbox = document.getElementById('analyticsCheckbox');
+      const prefCheckbox = document.getElementById('prefCheckbox');
+
+      function openModal() {
+        const currentPrefs = getCookiePreference();
+        if (currentPrefs) {
+          analyticsCheckbox.checked = currentPrefs.analytics !== false;
+          prefCheckbox.checked = currentPrefs.preferences !== false;
+        } else {
+          analyticsCheckbox.checked = true;
+          prefCheckbox.checked = true;
+        }
+        modal.style.display = 'flex';
+      }
+
+      function closeModal() {
+        modal.style.display = 'none';
+      }
+
+      function savePreferences() {
+        const analyticsEnabled = analyticsCheckbox.checked;
+        const prefEnabled = prefCheckbox.checked;
+        setCookiePreference(analyticsEnabled, prefEnabled);
+        applyConsentToAnalytics();
+        closeModal();
+        // optional: tiny alert for feedback
+        const msgDiv = document.createElement('div');
+        msgDiv.innerText = '🍃 Your cookie preferences have been saved. Thank you for tending your digital garden.';
+        msgDiv.style.position = 'fixed';
+        msgDiv.style.bottom = '20px';
+        msgDiv.style.left = '20px';
+        msgDiv.style.backgroundColor = '#1e3b4f';
+        msgDiv.style.color = '#fff9e6';
+        msgDiv.style.padding = '8px 18px';
+        msgDiv.style.borderRadius = '40px';
+        msgDiv.style.fontSize = '0.85rem';
+        msgDiv.style.zIndex = '1001';
+        document.body.appendChild(msgDiv);
+        setTimeout(() => { msgDiv.remove(); }, 3000);
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (savePrefBtn) savePrefBtn.addEventListener('click', savePreferences);
+      window.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+      // initial load: if no pref set, default is both true (but we simulate optional banner notice can appear on first visit)
+      if (!getCookiePreference()) {
+        // First-time visitor: initial preferences are set to true for both (implied consent)
+        setCookiePreference(true, true);
+      }
+      applyConsentToAnalytics();
+
+      // simulate an "Accept" banner-like? Not required but we add small note
+      const cookieStatus = getCookiePreference();
+      if (cookieStatus && cookieStatus.analytics === true) {
+        // just friendly passive note nothing else.
+      }
+
+      // highlight active nav for cookies page
+      const navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === 'cookies.html' || (link.pathname && link.pathname.includes('cookies'))) {
+          link.style.borderBottom = '2px solid var(--blue-soft)';
+          link.style.fontWeight = '600';
+        }
+      });
+
+      // smooth scroll for anchors
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href').substring(1);
+          if (targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
